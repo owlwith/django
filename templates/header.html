@@ -3,7 +3,10 @@
         <h1 class="pragmatic_logo" style="margin-bottom: 1rem;">outstagram</h1>
     </div>
     <div style="margin-bottom: 1rem;">
-        <span>nav1</span>
+        <a href="{% url 'articleapp:list' %}">
+            <span>Articles</span>
+        </a>
+
         <span>nav2</span>
         <span>nav3</span>
         {% if not user.is_authenticated %}
