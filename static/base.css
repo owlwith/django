@@ -3,7 +3,7 @@ font-family: 'Hahmlet', serif;
 }
 
 .pragmatic_footer_button {
-font-size: .9rem;
+font-size: .9rem auto;
 }
 
 .pragmatic_footer {
