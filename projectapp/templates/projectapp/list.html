@@ -10,22 +10,20 @@
         margin: 0, auto;
     }
 
-    .container a {
-        width: 45%;
-        max-width: 5rem;
-    }
+
 
     .container div {
       display: flex;
-      justify-content: left;
-      align-items: left;
+      justify-content: center;
+      align-items: center;
 
       border-radius: 1rem;
     }
 
     .container img {
-        width: 5rem;
-        height: 5rem;
+        width: 7rem;
+        height: 7rem;
+        object-fit: cover;
         border-radius: 1rem;
     }
 </style>
@@ -35,7 +33,6 @@
         {% for project in project_list %}
         <a href="{% url 'projectapp:detail' pk=project.pk %}">
             {% include 'snippets/projectcard.html' with project=project %}
-            <p style="text-align: center;">{{ project.title }}</p>
         </a>
         {% endfor %}
     </div>
